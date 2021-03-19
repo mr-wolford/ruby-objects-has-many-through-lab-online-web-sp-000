@@ -41,8 +41,6 @@ describe 'Doctor' do
     end
   end
 
-binding.pry
-
   describe '#patients' do
     it 'has many patients, through appointments' do
       doctor_who = Doctor.new('The Doctor')
