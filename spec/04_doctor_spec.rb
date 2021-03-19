@@ -1,4 +1,5 @@
 require 'spec_helper'
+
 describe 'Doctor' do
   describe '#name' do
     it 'has a name' do
@@ -22,7 +23,7 @@ describe 'Doctor' do
       hevydevy = Patient.new('Devin Townsend')
       appointment = Appointment.new('Friday, January 32nd', hevydevy, doctor_who)
       appointment_2 = Appointment.new('Saturday, January 33rd', hevydevy, doctor_smith)
-      
+
       expect(doctor_who.appointments).to include(appointment)
       expect(doctor_smith.appointments).to include(appointment_2)
 
