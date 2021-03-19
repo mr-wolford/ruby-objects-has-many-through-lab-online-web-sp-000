@@ -1,3 +1,4 @@
+require 'pry'
 require 'spec_helper'
 describe 'Doctor' do
   describe '#name' do
@@ -38,6 +39,8 @@ describe 'Doctor' do
       expect(appointment.doctor).to eq(doctor_who)
     end
   end
+
+binding.pry
 
   describe '#patients' do
     it 'has many patients, through appointments' do
